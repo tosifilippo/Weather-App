@@ -9,19 +9,21 @@
         <form id="form">
             <input id="text" type="text" placeholder="Location">
             <button id="submit">Submit</button>
-            <br>
-            <span id="error" hidden>No Matching Location Found!</span>
+            <br><br>
+            <span id="error" hidden>No matching location found!</span>
         </form> 
     </div>
-    <div>
-        <div id="display">
-            <p id="weather-description"></p>
-            <p id="city"></p>
-            <p id="temperature"></p>
-            <p id="feels-like"></p>
-            <p id="wind"></p>
-            <p id="humidity"></p>
+    <div id="display">
+        <div id="left">
+            <p class="left" id="weather-description"></p>
+            <p class="left" id="city"></p>
+            <p class="left" id="temperature"></p>
         </div>
+        <div id="right">
+            <p class="right" id="feels-like"></p>
+            <p class="right" id="wind"></p>
+            <p class="right" id="humidity"></p>
+        <div>
     </div>
     <script src="main.js"></script>
 </body>
