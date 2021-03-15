@@ -1,1 +1,1 @@
-!async function(a){const c=await fetch("http://api.openweathermap.org/data/2.5/weather?q=Pescantina,&APPID=517bdda0ae62f37b25ca4c3e3a3cc910",{mode:"cors"}),e=await c.json();console.log(e)}();
+(()=>{const e=document.getElementById("text"),t=document.getElementById("submit"),n=document.getElementById("display");t.addEventListener("click",(()=>{!async function(e){const t=await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${e},&APPID=517bdda0ae62f37b25ca4c3e3a3cc910&units=metric`,{mode:"cors"}),a=await t.json();console.log(a),n.innerHTML=a.main.temp}(e.value)}))})();
