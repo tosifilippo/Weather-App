@@ -13,7 +13,7 @@ const imperial = document.getElementById('imperial');
 
 async function getWeather(location, units) {
   try {
-    const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${location},&APPID=517bdda0ae62f37b25ca4c3e3a3cc910&units=${units}`, { mode: 'cors' });
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location},&APPID=517bdda0ae62f37b25ca4c3e3a3cc910&units=${units}`, { mode: 'cors' });
     const weatherData = await response.json();
     errorMessage.hidden = true;
     form.style.borderColor = 'black';
