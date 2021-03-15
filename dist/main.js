@@ -1,1 +1,1 @@
-!async function(){const a=await fetch("http://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=517bdda0ae62f37b25ca4c3e3a3cc910",{mode:"cors"}),o=await a.json();console.log(o)}();
+!async function(a){const c=await fetch("http://api.openweathermap.org/data/2.5/weather?q=Pescantina,&APPID=517bdda0ae62f37b25ca4c3e3a3cc910",{mode:"cors"}),e=await c.json();console.log(e)}();
