@@ -1,5 +1,5 @@
 #display {
-    margin-left: 20%;
+    margin-left: 5%;
     position: absolute;
     top: 50%;
     -ms-transform: translateY(-50%);
@@ -8,6 +8,13 @@
 }
 
 #form {
+    display:flex;
+    border: 1px solid grey;
+    padding: 2%;
+    border-radius: 25px;
+}
+
+#form-container {
     float: right;
     margin-top: 5%;
     margin-right: 5%;
@@ -16,22 +23,24 @@
 
 .left {
     margin: 0;
+    width: max-content;
 }
 
 p#weather-description {
-    font-size: x-small;
-}
-
-p#city {
     font-size: x-large;
 }
 
-p#temperature {
+p#city {
     font-size: 400%;
+}
+
+p#temperature {
+    font-size: 700%;
 }
 
 .right {
     width: max-content;
+    font-size: xx-large;
 }
 
 #left {
@@ -47,15 +56,24 @@ p#temperature {
 
 #error {
     color: red;
-    font-size: large;
+    font-size: x-large;
 }
 
 #text {
-    width: 50%;
     font-size: x-large;
     text-align: center;
+    width: 90%;
+    float: right;
+    border: none;
 }
 
 #submit {
     font-size: x-large;
+    background-image: url(https://img.icons8.com/pastel-glyph/2x/search--v2.png);
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 10%;
+    background-color: transparent;
+    border: none;
 }
