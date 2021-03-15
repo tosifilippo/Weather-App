@@ -1,3 +1,43 @@
+.clear {
+    background: url("/dist/img/clear-sky.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.rain {
+    background: url("/dist/img/rain.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+}
+
+.thunder {
+    background: url("/dist/img/thunder.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.snow {
+    background: url("/dist/img/snow.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.mist {
+    background: url("/dist/img/mist.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 #display {
     margin-left: 5%;
     position: absolute;
@@ -8,9 +48,13 @@
 
 #form {
     display:flex;
-    border: 1px solid grey;
+    border: 2px solid;
     padding: 2%;
     border-radius: 25px;
+}
+
+::placeholder {
+    color: black;
 }
 
 #form-container {
@@ -65,6 +109,7 @@ p#temperature {
     width: 90%;
     float: right;
     border: none;
+    background: transparent;
 }
 
 #submit {
