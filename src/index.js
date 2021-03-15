@@ -17,9 +17,9 @@ async function getWeather(location) {
     const description = weatherData.weather[0].description.toUpperCase();
     const city = weatherData.name.toUpperCase();
     const { country } = weatherData.sys;
-    const { temp } = weatherData.main;
-    const feelsLike = weatherData.main.feels_like;
-    const wind = weatherData.wind.speed;
+    const temp = Math.round(weatherData.main.temp);
+    const feelsLike = Math.round(weatherData.main.feels_like);
+    const wind = Math.round(weatherData.wind.speed);
     const { humidity } = weatherData.main;
     weatherDescriptionPara.innerHTML = description;
     cityPara.innerHTML = `${city}, ${country}`;
