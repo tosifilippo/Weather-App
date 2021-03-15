@@ -55,7 +55,17 @@ function handleSubmit(e) {
   }
 }
 
+function handleRadio() {
+  if (metric.checked) {
+    getWeather(cityPara.innerHTML, metric.id);
+  } else {
+    getWeather(cityPara.innerHTML, imperial.id);
+  }
+}
+
 submit.addEventListener('click', handleSubmit);
 form.addEventListener('submit', handleSubmit);
+metric.addEventListener('click', handleRadio);
+imperial.addEventListener('click', handleRadio);
 
 getWeather('Pescantina', 'metric');
