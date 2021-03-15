@@ -7,7 +7,13 @@ async function getWeather(location) {
   const weatherData = await response.json();
   // eslint-disable-next-line no-console
   console.log(weatherData);
-  display.innerHTML = `${weatherData.weather[0].description.toUpperCase()}<br>${weatherData.name.toUpperCase()}<br>${weatherData.main.temp}°C <br> Feels like: ${weatherData.main.feels_like}°C<br>Wind: ${weatherData.wind.speed} Km/h<br>Humidity: ${weatherData.main.humidity}%`;
+  const description = weatherData.weather[0].description.toUpperCase();
+  const city = weatherData.name.toUpperCase();
+  const { temp } = weatherData.main;
+  const feelsLike = weatherData.main.feels_like;
+  const wind = weatherData.wind.speed;
+  const { humidity } = weatherData.main;
+  display.innerHTML = `${description}<br>${city}<br>${temp}°C <br> Feels like: ${feelsLike}°C<br>Wind: ${wind} Km/h<br>Humidity: ${humidity}%`;
 }
 
 submit.addEventListener('click', () => {
