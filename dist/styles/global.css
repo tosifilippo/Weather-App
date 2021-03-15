@@ -1,5 +1,5 @@
 .clear {
-    background: url("/dist/img/clearsky.jpg") no-repeat center center fixed;
+    background: url("../img/clearsky.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -7,7 +7,7 @@
 }
 
 .rain {
-    background: url("/dist/img/rain.jpg") no-repeat center center fixed;
+    background: url("../img/rain.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -15,7 +15,7 @@
 }
 
 .thunder {
-    background: url("/dist/img/thunder.jpg") no-repeat center center fixed;
+    background: url("../img/thunder.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -23,7 +23,7 @@
 }
 
 .snow {
-    background: url("/dist/img/snow.jpg") no-repeat center center fixed;
+    background: url("../img/snow.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -31,7 +31,7 @@
 }
 
 .mist {
-    background: url("/dist/img/mist.jpg") no-repeat center center fixed;
+    background: url("../img/mist.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
