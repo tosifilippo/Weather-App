@@ -16,7 +16,20 @@ async function getWeather(location, units) {
     const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${location},&APPID=517bdda0ae62f37b25ca4c3e3a3cc910&units=${units}`, { mode: 'cors' });
     const weatherData = await response.json();
     errorMessage.hidden = true;
+    form.style.borderColor = 'black';
     const description = weatherData.weather[0].description.toUpperCase();
+    const generalDescription = weatherData.weather[0].main.toUpperCase();
+    if (generalDescription === 'CLEAR' || generalDescription === 'CLOUDS') {
+      document.documentElement.setAttribute('class', 'clear');
+    } else if (generalDescription === 'DRIZZLE' || generalDescription === 'RAIN' || generalDescription === 'SQUALL' || generalDescription === 'TORNADO') {
+      document.documentElement.setAttribute('class', 'rain');
+    } else if (generalDescription === 'THUNDERSTORM') {
+      document.documentElement.setAttribute('class', 'thunder');
+    } else if (generalDescription === 'SNOW') {
+      document.documentElement.setAttribute('class', 'snow');
+    } else if (generalDescription === 'MIST' || generalDescription === 'FOG' || generalDescription === 'HAZE' || generalDescription === 'SMOKE' || generalDescription === 'DUST' || generalDescription === 'SAND' || generalDescription === 'ASH') {
+      document.documentElement.setAttribute('class', 'mist');
+    }
     const city = weatherData.name.toUpperCase();
     const { country } = weatherData.sys;
     const temp = Math.round(weatherData.main.temp);
@@ -43,6 +56,7 @@ async function getWeather(location, units) {
     humidityPara.innerHTML = `Humidity: ${humidity}%`;
   } catch (error) {
     errorMessage.hidden = false;
+    form.style.borderColor = 'red';
   }
 }
 
