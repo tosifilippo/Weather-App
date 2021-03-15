@@ -7,9 +7,11 @@ async function getWeather(location) {
   const weatherData = await response.json();
   // eslint-disable-next-line no-console
   console.log(weatherData);
-  display.innerHTML = weatherData.main.temp;
+  display.innerHTML = `${weatherData.weather[0].description.toUpperCase()}<br>${weatherData.name.toUpperCase()}<br>${weatherData.main.temp}°C <br> Feels like: ${weatherData.main.feels_like}°C<br>Wind: ${weatherData.wind.speed} Km/h<br>Humidity: ${weatherData.main.humidity}%`;
 }
 
 submit.addEventListener('click', () => {
   getWeather(text.value);
 });
+
+getWeather('Pescantina');
