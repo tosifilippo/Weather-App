@@ -38,19 +38,45 @@
     background-size: cover;
 }
 
-#display {
-    margin-left: 5%;
-    position: absolute;
-    top: 55%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
 #form {
     display:flex;
     border: 2px solid;
     padding: 2%;
     border-radius: 25px;
+}
+
+
+
+#error {
+    color: red;
+    font-size: x-large;
+}
+
+#text {
+    font-size: x-large;
+    text-align: center;
+    width: 90%;
+    float: right;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+#submit {
+    font-size: x-large;
+    background-image: url(https://img.icons8.com/pastel-glyph/2x/search--v2.png);
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 10%;
+    background-color: transparent;
+    border: none;
+}
+
+#radio-container {
+    float: left;
+    margin: 5%;
+    font-size: x-large;
 }
 
 ::placeholder {
@@ -64,21 +90,18 @@
     text-align: center;
 }
 
+
+#display {
+    margin-left: 5%;
+    position: absolute;
+    top: 55%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
 .left {
     margin: 0;
     width: max-content;
-}
-
-p#weather-description {
-    font-size: x-large;
-}
-
-p#city {
-    font-size: 400%;
-}
-
-p#temperature {
-    font-size: 700%;
 }
 
 .right {
@@ -98,35 +121,16 @@ p#temperature {
     width: 100%;
 }
 
-#error {
-    color: red;
+p#weather-description {
     font-size: x-large;
 }
 
-#text {
-    font-size: x-large;
-    text-align: center;
-    width: 90%;
-    float: right;
-    border: none;
-    background: transparent;
+p#city {
+    font-size: 400%;
 }
 
-#submit {
-    font-size: x-large;
-    background-image: url(https://img.icons8.com/pastel-glyph/2x/search--v2.png);
-    background-position: left;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 10%;
-    background-color: transparent;
-    border: none;
-}
-
-#radio-container {
-    float: left;
-    margin: 5%;
-    font-size: x-large;
+p#temperature {
+    font-size: 700%;
 }
 
 #under {
