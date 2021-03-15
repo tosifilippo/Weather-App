@@ -1,0 +1,61 @@
+#display {
+    margin-left: 20%;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: flex;
+}
+
+#form {
+    float: right;
+    margin-top: 5%;
+    margin-right: 5%;
+    text-align: center;
+}
+
+.left {
+    margin: 0;
+}
+
+p#weather-description {
+    font-size: x-small;
+}
+
+p#city {
+    font-size: x-large;
+}
+
+p#temperature {
+    font-size: 400%;
+}
+
+.right {
+    width: max-content;
+}
+
+#left {
+    padding-right: 5%;
+    width: 100%;
+}
+
+#right {
+    padding-left: 5%;
+    width: 100%;
+    border-left: solid;
+}
+
+#error {
+    color: red;
+    font-size: large;
+}
+
+#text {
+    width: 50%;
+    font-size: x-large;
+    text-align: center;
+}
+
+#submit {
+    font-size: x-large;
+}
