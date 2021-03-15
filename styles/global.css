@@ -1,10 +1,9 @@
 #display {
     margin-left: 5%;
     position: absolute;
-    top: 50%;
+    top: 55%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    display: flex;
 }
 
 #form {
@@ -40,18 +39,19 @@ p#temperature {
 
 .right {
     width: max-content;
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 #left {
     padding-right: 5%;
     width: 100%;
+    align-self: center;
+    border-right: solid ;
 }
 
 #right {
     padding-left: 5%;
     width: 100%;
-    border-left: solid;
 }
 
 #error {
@@ -76,4 +76,14 @@ p#temperature {
     width: 10%;
     background-color: transparent;
     border: none;
+}
+
+#radio-container {
+    float: left;
+    margin: 5%;
+    font-size: x-large;
+}
+
+#under {
+    display: flex;
 }
