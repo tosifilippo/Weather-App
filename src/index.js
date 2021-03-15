@@ -9,11 +9,12 @@ async function getWeather(location) {
   console.log(weatherData);
   const description = weatherData.weather[0].description.toUpperCase();
   const city = weatherData.name.toUpperCase();
+  const { country } = weatherData.sys;
   const { temp } = weatherData.main;
   const feelsLike = weatherData.main.feels_like;
   const wind = weatherData.wind.speed;
   const { humidity } = weatherData.main;
-  display.innerHTML = `${description}<br>${city}<br>${temp}°C <br> Feels like: ${feelsLike}°C<br>Wind: ${wind} Km/h<br>Humidity: ${humidity}%`;
+  display.innerHTML = `${description}<br>${city}, ${country}<br>${temp}°C <br> Feels like: ${feelsLike}°C<br>Wind: ${wind} Km/h<br>Humidity: ${humidity}%`;
 }
 
 submit.addEventListener('click', () => {
